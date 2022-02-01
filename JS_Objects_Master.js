@@ -68,8 +68,6 @@ console.log();
 
 // Bonus Challenge: console.log the reverse of the names of the pokémon whose only type is "poison"
 var revName = "";
-var first = '';
-var last = '';
 for (var i = 0; i < pokemon.length; i++) {
     if (pokemon[i].types.length == 1 && pokemon[i].types[0] == "poison") {
         for (var j = pokemon[i].name.length - 1; j >= 0; j--) {
@@ -78,6 +76,5 @@ for (var i = 0; i < pokemon.length; i++) {
 
         console.log(revName.toUpperCase());
         revName = "";
-
     }
 }
